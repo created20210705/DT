@@ -1,24 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>지도 생성하기</title>
-
+  <title>WEB</title>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src = "color.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- 지도를 표시할 div 입니다 -->
-<div id="map" style="width:100%;height:350px;"></div>
-
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=발급받은 APP KEY를 사용하세요"></script>
-<script>
-var mapContainer = document.getElementById('map'), // 지도를 표시할 div
-    mapOption = {
-        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
-        level: 3 // 지도의 확대 레벨
-    };
-
-// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-var map = new kakao.maps.Map(mapContainer, mapOption);
-</script>
+  <h1><a href="index.html">WEB</a></h1>
+  <input type="button" value="night" onclick="nightDayHandler(this);">
+  <div id="grid">
+    <ol>
+      <li><a href = "1.html">HTML</a><br></li>
+      <li><a href = "2.html">CSS</a><br></li>
+      <li><a href = "3.html">JavaScript</a><br></li>
+    </ol>
+    <div id="article">
+      <h2>WEB</h2>
+      <p>
+        The World Wide Web (abbreviated WWW or the Web) is an information space
+        where documents and other web resources are identified by Uniform Resource Locators (URLs),
+        interlinked by hypertext links, and can be accessed via the Internet.
+        [1] English scientist Tim Berners-Lee invented the World Wide Web in 1989.
+        He wrote the first web browser computer program in 1990 while employed at CERN
+        in Switzerland.[2][3] The Web browser was released outside of CERN in 1991,
+        first to other research institutions starting in January 1991 and to the general public
+        on the Internet in August 1991.
+      </p>
+    </div>
+  </div>
 </body>
 </html>
